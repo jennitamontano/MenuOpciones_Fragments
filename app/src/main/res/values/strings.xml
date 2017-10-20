@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PetsJenny</string>
+    <string name="menu_about">ABOUT</string>
+    <string name="menu_contacto">CONTACTO</string>
+    <string name="texto_about">Acerca de:</string>
+    <string name="texto_contacto">Contacto:</string>
+    <string name="texto_creador">Creador: Jennifer Montaño</string>
+    <string name="texto_ocupacion">Ocupación: L.S.C.I.</string>
+    <string name="texto_hobbie">Hobbie: Amante de los animales</string>
+    <string name="hint_nombreusuario">Nombre de usuario:</string>
+    <string name="hint_correoelectronico">E-mail:</string>
+    <string name="hint_password">Password:</string>
+    <string name="hint_comentario">Comentario:</string>
+    <string name="actividad_enviar">ENVIAR COMENTARIO</string>
+    <string name="comentario">Comentario</string>
+    <string name="pet_profile_name">Kiwi</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

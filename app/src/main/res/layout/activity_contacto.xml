@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mx.jennifermontano.petsjenny.FavoritePets$ActivityContacto"
+    >
+    <include android:id="@+id/miActionBar"
+        android:layout="@layout/actionbar"
+        >
+    </include>
+
+    <!--NOMBRE-->
+    <LinearLayout
+        android:id="@+id/espacio_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="56dp">
+
+        <ImageView
+            android:id="@+id/imagen_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/username" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/introducir_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/textColorHighlightInverse"
+                android:ems="10"
+                android:hint="@string/hint_nombreusuario"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textColorHint="@color/textos"
+                android:textSize="20dp"
+                android:textColor="@color/textos"
+                android:textStyle="bold|italic" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+
+    <!-- Correo Electrónico-->
+
+    <LinearLayout
+        android:id="@+id/espacio_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/espacio_nombre"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imagen_correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imagen_usuario"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical"
+            android:layout_row="2"
+            android:src="@drawable/correoelectronico" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/introducir_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_correoelectronico"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="@color/textos"
+                android:textColorHint="@color/textos"
+                android:textSize="20dp"
+                android:textStyle="bold|italic"/>
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Password -->
+    <LinearLayout
+        android:id="@+id/espacio_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/espacio_correo"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imagen_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imagen_correo"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical"
+            android:layout_row="2"
+            android:src="@drawable/password" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/introducir_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_password"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/textos"
+                android:textColorHint="@color/textos"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Comentario-->
+    <LinearLayout
+        android:id="@+id/espacio_comentario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/espacio_password"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imagen_comentario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imagen_password"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical"
+            android:layout_row="2"
+            android:src="@drawable/comentariousuario" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/introducir_comentario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_comentario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_comentario"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/textos"
+                android:textColorHint="@color/textos"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <!-- BOTON -->
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Botón ENVIAR COMENTARIO-->
+        <Button
+            android:id="@+id/btnEnviarComentario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorAccent"
+            android:text="@string/actividad_enviar"
+            android:textColor="@android:color/white"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+</RelativeLayout>
